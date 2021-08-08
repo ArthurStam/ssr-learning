@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+}
+
+.App__header {
+  height: 52px;
+}
+
+.App__footer {
+  height: 52px;
+}
+
+.App__content {
+  min-height: calc(100vh - 2 * 52px);
+}

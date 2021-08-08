@@ -1,0 +1,11 @@
+{
+  "extends": "./.babelrc",
+  "ignore": ["src/client/*"],
+  "plugins": [
+    [
+      "babel-plugin-transform-remove-imports", {
+        "test": ".css$"
+      }
+    ]
+  ]
+}

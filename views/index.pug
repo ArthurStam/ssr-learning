@@ -1,0 +1,11 @@
+doctype html
+html(lang="en")
+    head
+        title= pageTitle
+        each item in css
+            link(rel='stylesheet' href=item)
+        script window.appData = !{appData}
+    body
+        #root !{content}
+        each item in js
+            script(src=item)
