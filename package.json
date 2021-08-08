@@ -6,7 +6,9 @@
   "scripts": {
     "buildServer": "babel --config-file ./.babel-server.json --out-dir server-dist src",
     "buildStatic": "webpack",
-    "start": "nodemon server-dist/server"
+    "build": "yarn buildStatic && yarn buildServer",
+    "dev": "nodemon server-dist/server",
+    "start": "node server-dist/server"
   },
   "dependencies": {
     "express": "^4.17.1",
